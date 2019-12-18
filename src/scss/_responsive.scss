@@ -1,0 +1,10 @@
+@include mobile {
+  .nav, .nav__menu, .nav__items {
+    flex-direction: column;
+    background: black;
+  }
+
+  .nav__burger {
+    display: initial;
+  }
+}

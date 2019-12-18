@@ -1,0 +1,22 @@
+.nav__burger{
+  position: absolute;
+  top: 0;
+  width: 90%;
+  cursor: pointer;
+  display: none;
+  
+  &-icon {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+
+    i {
+      font-size: 1.4rem;
+      color: $second-color;
+    }
+  }
+}
+
+.toggle-button {
+  height: 100vh;
+}

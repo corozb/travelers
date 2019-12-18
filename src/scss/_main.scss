@@ -1,0 +1,32 @@
+.main {
+    background: url(https://source.unsplash.com/1600x900/?travel);
+    height: 110vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+    &__bg {
+      padding-top: 10rem;
+      text-align: center;
+      color: #fff;
+      text-shadow: 4px 3px 8px #393E46;
+
+      .btn {
+        border: none;
+        border-radius: 2rem;
+        margin: 1.8rem;
+        background: $light-color;
+        padding: 1rem 3rem;
+        font-size: 1rem;
+        font-family: $button-font;
+        cursor: pointer;
+        
+        &:hover {
+          color: #fff;
+          background: transparent;
+          border: 1px solid #fff;
+          box-shadow: 4px 3px 8px #393E46;
+        }
+      }
+    }
+}

@@ -1,0 +1,65 @@
+.nav {
+  padding: 0 2rem;
+  height: 0;
+  min-height: 10vh;
+  overflow: hidden;
+  transition: height .9s ease-in-out;
+  
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+
+  
+  &__brand {
+    a {
+      font-size: 1.6rem;
+      padding: 1rem 0;
+      display: block;
+      font-family: $brand-font;
+      color: $strong-color;
+    }
+  }
+
+  &__items {
+    display: flex;
+
+    &-link {
+      padding: 1.4rem 1rem;
+      font-size: 1.1rem;
+      position: relative;
+      font-family: $menu-font;
+
+      a {
+        color: $second-color;
+      }
+      
+      &:hover, &:hover a {
+        cursor: pointer;
+        color: #fff;
+        background: $hover-color;
+
+      }
+    }
+  }
+
+  .social {
+    padding: 1.4rem 0;
+    a {
+      color: $strong-color;
+
+      i {
+        padding: 0 .2rem;
+
+        &:hover {
+          color: $hover-color;
+        }
+      }
+    }
+  }
+  
+}
+
