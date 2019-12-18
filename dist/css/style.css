@@ -3,7 +3,6 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 main {
@@ -34,6 +33,10 @@ h2 {
 h3 {
   font-family: "Abel", sans-serif;
   font-size: 1.3rem;
+}
+
+span {
+  font-family: "Abel", sans-serif;
 }
 
 .nav {
@@ -135,7 +138,7 @@ h3 {
 }
 
 .main {
-  background: url(https://source.unsplash.com/1600x900/?travel);
+  background: url(../../dist/images/hero-traverlers.png);
   height: 110vh;
   background-size: cover;
   display: -webkit-box;
@@ -150,26 +153,114 @@ h3 {
   padding-top: 10rem;
   text-align: center;
   color: #fff;
-  text-shadow: 4px 3px 8px #393E46;
+  text-shadow: 4px 3px 8px #393e46;
 }
 
 .main__bg .btn {
+  margin: 1.8rem;
+  padding: 1rem 3rem;
   border: none;
   border-radius: 2rem;
-  margin: 1.8rem;
   background: #a3f7bf;
-  padding: 1rem 3rem;
   font-size: 1rem;
   font-family: "Livvic", sans-serif;
   cursor: pointer;
+  color: #fff;
 }
 
 .main__bg .btn:hover {
-  color: #fff;
+  color: #222831;
   background: transparent;
   border: 1px solid #fff;
-  -webkit-box-shadow: 4px 3px 8px #393E46;
-          box-shadow: 4px 3px 8px #393E46;
+  -webkit-box-shadow: 4px 3px 8px #393e46;
+          box-shadow: 4px 3px 8px #393e46;
+}
+
+.carousel {
+  background: url(../../dist/images/abstrac.png) right no-repeat;
+  height: 100vh;
+  width: 100%;
+  margin-top: 14vh;
+  background-size: 65%;
+}
+
+.carousel__container {
+  margin: 0 5vw;
+}
+
+.carousel__container-box {
+  padding-top: 3rem;
+}
+
+.carousel__container-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 80%;
+  margin: 3rem 2rem;
+  -webkit-box-shadow: 0 15px 20px rgba(57, 62, 70, 0.2);
+          box-shadow: 0 15px 20px rgba(57, 62, 70, 0.2);
+}
+
+.carousel__container-card .btn {
+  margin: .5rem;
+  padding: .7rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  background: #a3f7bf;
+  font-size: 1rem;
+  font-family: "Livvic", sans-serif;
+  cursor: pointer;
+  color: #fff;
+}
+
+.carousel__container-card .btn:hover {
+  color: #222831;
+  background: transparent;
+  border: 1px solid #fff;
+  -webkit-box-shadow: 4px 3px 8px #393e46;
+          box-shadow: 4px 3px 8px #393e46;
+}
+
+.carousel__container .owl-nav {
+  position: absolute;
+  top: 0;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.carousel__container .owl-nav .owl-nav-prev,
+.carousel__container .owl-nav .owl-nav-next {
+  color: #222831;
+  background: transparent;
+  font-size: 2rem;
+}
+
+.carousel__container .owl-theme .owl-nav [class*='owl-']:hover {
+  background: transparent;
+  color: #29a19c;
+}
+
+.carousel__container .owl-theme .owl-nav [class*='owl-'] {
+  outline: none;
+}
+
+.carousel-card-title {
+  padding: 2rem 0;
+}
+
+.carousel-card-title h3 {
+  padding-bottom: 1.3rem;
+}
+
+.carousel-card-title span {
+  display: block;
+  margin-top: 1rem;
 }
 
 @media screen and (max-width: 768px) {

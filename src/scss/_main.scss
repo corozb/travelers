@@ -1,5 +1,5 @@
 .main {
-    background: url(https://source.unsplash.com/1600x900/?travel);
+    background: url(../../dist/images/hero-traverlers.png);
     height: 110vh;
     background-size: cover;
     display: flex;
@@ -9,24 +9,12 @@
       padding-top: 10rem;
       text-align: center;
       color: #fff;
-      text-shadow: 4px 3px 8px #393E46;
+      text-shadow: 4px 3px 8px $second-color;
 
       .btn {
-        border: none;
-        border-radius: 2rem;
         margin: 1.8rem;
-        background: $light-color;
         padding: 1rem 3rem;
-        font-size: 1rem;
-        font-family: $button-font;
-        cursor: pointer;
-        
-        &:hover {
-          color: #fff;
-          background: transparent;
-          border: 1px solid #fff;
-          box-shadow: 4px 3px 8px #393E46;
-        }
+        @include button;
       }
     }
 }

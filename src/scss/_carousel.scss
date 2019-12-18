@@ -1,0 +1,70 @@
+.carousel {
+  background: url(../../dist/images/abstrac.png) right no-repeat;
+  height: 100vh;
+  width: 100%;
+  margin-top: 14vh;
+  background-size: 65%;
+
+  &__container {
+    margin: 0 5vw;
+
+    &-box {
+      padding-top: 3rem;
+    }
+
+    &-card {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width: 80%;
+      margin: 3rem 2rem;
+      box-shadow: 0 15px 20px rgba($second-color, 0.2);
+
+      
+
+      .btn  {
+        margin: .5rem;
+        padding: .7rem 2rem;
+        @include button;
+      }
+    }
+
+    .owl-nav {
+      position: absolute;
+      top: 0;
+      margin: 0 auto;
+      width: 100%;
+
+      .owl-nav-prev, 
+      .owl-nav-next {
+        color: $strong-color;
+        background: transparent;
+        font-size: 2rem;
+      }
+    }
+
+    .owl-theme .owl-nav [class*='owl-']:hover{
+      background: transparent;
+      color: $hover-color;
+    }
+  
+    .owl-theme .owl-nav [class*='owl-']{
+        outline: none;
+    }
+
+  }
+
+
+}
+
+.carousel-card-title {
+  padding: 2rem 0;
+
+  h3 {
+    padding-bottom: 1.3rem;
+  }
+  span {
+    display: block;
+    margin-top: 1rem;
+  }
+}
