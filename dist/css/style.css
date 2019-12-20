@@ -307,7 +307,7 @@ p {
   padding: 1rem;
   position: absolute;
   bottom: 0%;
-  left: 20vw;
+  left: 16vw;
   border-radius: 3rem;
 }
 
@@ -373,6 +373,33 @@ p {
 
 .container .pagination__number {
   background-color: #222831;
+}
+
+.container .pagination__number:hover {
+  background-color: #393e46;
+}
+
+.sidebar__category-list {
+  font-family: "Livvic", sans-serif;
+}
+
+.sidebar__category-item {
+  background: -webkit-gradient(linear, left top, right top, from(#a3f7bf), to(#29a19c));
+  background: linear-gradient(to right, #a3f7bf, #29a19c);
+  padding: .4rem 1rem;
+  margin: .8rem 0;
+  border-radius: 3rem;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sidebar__category-item a {
+  color: #222831;
 }
 
 @media screen and (max-width: 768px) {
