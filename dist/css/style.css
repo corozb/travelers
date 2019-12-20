@@ -402,6 +402,85 @@ p {
   color: #222831;
 }
 
+.sidebar__popular h2 {
+  padding-top: 8rem;
+}
+
+.sidebar__popular .post__content {
+  padding: 1rem 0;
+}
+
+.sidebar__popular .post__content-image-info {
+  padding: .4rem .1rem;
+  bottom: 0rem;
+  left: 1.5rem;
+  border-radius: 0;
+  background: #fff;
+}
+
+.sidebar__popular .post__content-title a {
+  font-size: 1rem;
+}
+
+.sidebar__newsletter {
+  padding: 3rem;
+}
+
+.sidebar__newsletter .sidebar__form {
+  padding: .5rem 2rem;
+}
+
+.sidebar__newsletter .sidebar__form-input {
+  width: 92%;
+  height: rem;
+  padding: .3rem .5rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1rem;
+  outline: none;
+}
+
+.sidebar__newsletter .sidebar__form-btn {
+  border: none;
+  border-radius: 2rem;
+  background: -webkit-gradient(linear, left top, right top, from(#a3f7bf), to(#29a19c));
+  background: linear-gradient(to right, #a3f7bf, #29a19c);
+  font-size: 1rem;
+  font-family: "Livvic", sans-serif;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 0;
+  padding: .8rem 32%;
+  margin: 1rem 0;
+}
+
+.sidebar__newsletter .sidebar__form-btn:hover {
+  color: #222831;
+  background: transparent;
+  border: 1px solid #fff;
+  -webkit-box-shadow: 4px 3px 8px #393e46;
+          box-shadow: 4px 3px 8px #393e46;
+}
+
+.sidebar__tags {
+  padding: 5rem 0;
+}
+
+.sidebar__tags-popular {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sidebar__tags-popular .tag {
+  background: -webkit-gradient(linear, left top, right top, from(#a3f7bf), to(#29a19c));
+  background: linear-gradient(to right, #a3f7bf, #29a19c);
+  padding: .4rem 1rem;
+  border-radius: 3rem;
+  margin: .4rem .6rem;
+}
+
 @media screen and (max-width: 768px) {
   .nav, .nav__menu, .nav__items {
     -webkit-box-orient: vertical;

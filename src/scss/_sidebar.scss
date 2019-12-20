@@ -16,4 +16,70 @@
       color: $strong-color;
     }
   }
+
+  &__popular {
+    h2 {
+      padding-top: 8rem;
+    }
+
+    .post__content {
+      padding: 1rem 0;
+
+      &-image-info {
+        padding: .4rem .1rem;
+        bottom: 0rem;
+        left: 1.5rem;
+        border-radius: 0;
+        background: #fff;
+      }
+
+      &-title {
+        a {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  &__newsletter {
+    padding: 3rem;
+
+    .sidebar__form {
+      padding: .5rem 2rem;
+
+      &-input {
+        width: 92%;
+        height: rem;
+        padding: .3rem .5rem;
+        font-family: $brand-font;
+        font-size: 1rem;
+        outline: none;
+      }
+
+      &-btn {
+        @include button;
+        border-radius: 0;
+        padding: .8rem 32%;
+        margin: 1rem 0;
+      }
+    }
+
+  }
+
+  &__tags {
+    padding: 5rem 0;
+
+    &-popular {
+      @include flex;
+
+      .tag {
+        background: $light-color;
+        padding: .4rem 1rem;
+        border-radius: 3rem;
+        margin: .4rem .6rem;
+      }
+    }
+  }
+
+
 }
