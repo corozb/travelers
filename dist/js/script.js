@@ -10,7 +10,7 @@ $burgerIcon.addEventListener('click', () => {
 // Initialize Owl Carousel
   $(".owl-carousel").owlCarousel({
     loop: true,
-    autoplay: false,
+    autoplay: true,
     autoplayTimeout: 3000,
     dots: false,
     nav: true,

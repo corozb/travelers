@@ -39,6 +39,12 @@ span {
   font-family: "Abel", sans-serif;
 }
 
+p {
+  font-family: "Lexend Deca", sans-serif;
+  color: #393e46;
+  padding: 1rem 0;
+}
+
 .nav {
   padding: 0 2rem;
   height: 0;
@@ -161,7 +167,8 @@ span {
   padding: 1rem 3rem;
   border: none;
   border-radius: 2rem;
-  background: #a3f7bf;
+  background: -webkit-gradient(linear, left top, right top, from(#a3f7bf), to(#29a19c));
+  background: linear-gradient(to right, #a3f7bf, #29a19c);
   font-size: 1rem;
   font-family: "Livvic", sans-serif;
   cursor: pointer;
@@ -212,7 +219,8 @@ span {
   padding: .7rem 2rem;
   border: none;
   border-radius: 2rem;
-  background: #a3f7bf;
+  background: -webkit-gradient(linear, left top, right top, from(#a3f7bf), to(#29a19c));
+  background: linear-gradient(to right, #a3f7bf, #29a19c);
   font-size: 1rem;
   font-family: "Livvic", sans-serif;
   cursor: pointer;
@@ -261,6 +269,110 @@ span {
 .carousel-card-title span {
   display: block;
   margin-top: 1rem;
+}
+
+.container {
+  margin: 0 5vw;
+}
+
+.container__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+}
+
+.container .post__content {
+  width: 100%;
+}
+
+.container .post__content-image, .container .post__content-title {
+  position: relative;
+  padding: 1rem 2rem;
+}
+
+.container .post__content-image img {
+  width: 100%;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.container .post__content-image img:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.container .post__content-image-info {
+  background: #a3f7bf;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0%;
+  left: 20vw;
+  border-radius: 3rem;
+}
+
+.container .post__content-image-info span {
+  margin: 0 .5rem;
+  color: #393e46;
+}
+
+.container .post__content-image > div {
+  overflow: hidden;
+}
+
+.container .post__content-title a {
+  font-family: "Anton", sans-serif;
+  font-size: 1.5rem;
+  color: #222831;
+}
+
+.container .post__content-title .btn {
+  border: none;
+  border-radius: 2rem;
+  background: -webkit-gradient(linear, left top, right top, from(#a3f7bf), to(#29a19c));
+  background: linear-gradient(to right, #a3f7bf, #29a19c);
+  font-size: 1rem;
+  font-family: "Livvic", sans-serif;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 0;
+  padding: .7rem 1.5rem;
+}
+
+.container .post__content-title .btn:hover {
+  color: #222831;
+  background: transparent;
+  border: 1px solid #fff;
+  -webkit-box-shadow: 4px 3px 8px #393e46;
+          box-shadow: 4px 3px 8px #393e46;
+}
+
+.container .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 4rem 0;
+}
+
+.container .pagination a {
+  padding: .6rem .9rem;
+  border-radius: 2rem;
+  margin: 0.3rem;
+  font-family: "Lexend Deca", sans-serif;
+  color: #fff;
+}
+
+.container .pagination a i {
+  color: #393e46;
+}
+
+.container .pagination__number {
+  background-color: #222831;
 }
 
 @media screen and (max-width: 768px) {

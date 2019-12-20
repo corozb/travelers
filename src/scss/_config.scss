@@ -38,6 +38,11 @@ span {
   font-family: $menu-font;
 }
 
+p {
+  font-family: $brand-font;
+  color: $second-color;
+  padding: 1rem 0;
+}
 // ------------- MIXIN ------------
 @mixin caja {
   font-weight: 600;
