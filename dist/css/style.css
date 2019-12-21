@@ -187,11 +187,14 @@ p {
   border-radius: 2rem;
   background: -webkit-gradient(linear, left top, right top, from(#a3f7bf), to(#29a19c));
   background: linear-gradient(to right, #a3f7bf, #29a19c);
-  font-size: 1rem;
-  font-family: "Livvic", sans-serif;
   cursor: pointer;
-  color: #fff;
   outline: none;
+}
+
+.main__bg .btn a {
+  font-family: "Livvic", sans-serif;
+  font-size: 1rem;
+  color: #fff;
 }
 
 .main__bg .btn:hover {
@@ -200,6 +203,10 @@ p {
   border: 1px solid #fff;
   -webkit-box-shadow: 4px 3px 8px #393e46;
           box-shadow: 4px 3px 8px #393e46;
+}
+
+.main__bg .btn:hover a, .main__bg .btn:hover i {
+  color: #393e46;
 }
 
 .carousel {
@@ -238,13 +245,16 @@ p {
   border-radius: 2rem;
   background: -webkit-gradient(linear, left top, right top, from(#a3f7bf), to(#29a19c));
   background: linear-gradient(to right, #a3f7bf, #29a19c);
-  font-size: 1rem;
-  font-family: "Livvic", sans-serif;
   cursor: pointer;
-  color: #fff;
   outline: none;
   margin: .5rem;
   padding: .7rem 2rem;
+}
+
+.carousel__container-card .btn a {
+  font-family: "Livvic", sans-serif;
+  font-size: 1rem;
+  color: #fff;
 }
 
 .carousel__container-card .btn:hover {
@@ -255,12 +265,8 @@ p {
           box-shadow: 4px 3px 8px #393e46;
 }
 
-.carousel__container-card .btn:hover a {
+.carousel__container-card .btn:hover a, .carousel__container-card .btn:hover i {
   color: #393e46;
-}
-
-.carousel__container-card a {
-  color: #fff;
 }
 
 .carousel__container .owl-nav {
@@ -354,18 +360,25 @@ p {
   color: #222831;
 }
 
+.container .post__content-title a:hover {
+  color: #29a19c;
+}
+
 .container .post__content-title .btn {
   border: none;
   border-radius: 2rem;
   background: -webkit-gradient(linear, left top, right top, from(#a3f7bf), to(#29a19c));
   background: linear-gradient(to right, #a3f7bf, #29a19c);
-  font-size: 1rem;
-  font-family: "Livvic", sans-serif;
   cursor: pointer;
-  color: #fff;
   outline: none;
   border-radius: 0;
   padding: .7rem 1.5rem;
+}
+
+.container .post__content-title .btn a {
+  font-family: "Livvic", sans-serif;
+  font-size: 1rem;
+  color: #fff;
 }
 
 .container .post__content-title .btn:hover {
@@ -374,6 +387,14 @@ p {
   border: 1px solid #fff;
   -webkit-box-shadow: 4px 3px 8px #393e46;
           box-shadow: 4px 3px 8px #393e46;
+}
+
+.container .post__content-title .btn:hover a, .container .post__content-title .btn:hover i {
+  color: #393e46;
+}
+
+.container .post__content-title .btn i {
+  color: #fff;
 }
 
 .container .pagination {
@@ -473,14 +494,17 @@ p {
   border-radius: 2rem;
   background: -webkit-gradient(linear, left top, right top, from(#a3f7bf), to(#29a19c));
   background: linear-gradient(to right, #a3f7bf, #29a19c);
-  font-size: 1rem;
-  font-family: "Livvic", sans-serif;
   cursor: pointer;
-  color: #fff;
   outline: none;
   border-radius: 0;
   padding: .8rem 32%;
   margin: 1rem 0;
+}
+
+.sidebar__newsletter .sidebar__form-btn a {
+  font-family: "Livvic", sans-serif;
+  font-size: 1rem;
+  color: #fff;
 }
 
 .sidebar__newsletter .sidebar__form-btn:hover {
@@ -489,6 +513,10 @@ p {
   border: 1px solid #fff;
   -webkit-box-shadow: 4px 3px 8px #393e46;
           box-shadow: 4px 3px 8px #393e46;
+}
+
+.sidebar__newsletter .sidebar__form-btn:hover a, .sidebar__newsletter .sidebar__form-btn:hover i {
+  color: #393e46;
 }
 
 .sidebar__tags {
@@ -504,11 +532,32 @@ p {
 }
 
 .sidebar__tags-popular .tag {
+  border: none;
+  border-radius: 2rem;
   background: -webkit-gradient(linear, left top, right top, from(#a3f7bf), to(#29a19c));
   background: linear-gradient(to right, #a3f7bf, #29a19c);
+  cursor: pointer;
+  outline: none;
   padding: .4rem 1rem;
-  border-radius: 3rem;
   margin: .4rem .6rem;
+}
+
+.sidebar__tags-popular .tag a {
+  font-family: "Livvic", sans-serif;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.sidebar__tags-popular .tag:hover {
+  color: #222831;
+  background: transparent;
+  border: 1px solid #fff;
+  -webkit-box-shadow: 4px 3px 8px #393e46;
+          box-shadow: 4px 3px 8px #393e46;
+}
+
+.sidebar__tags-popular .tag:hover a, .sidebar__tags-popular .tag:hover i {
+  color: #393e46;
 }
 
 .footer {
@@ -546,7 +595,7 @@ p {
   padding: .5rem .7rem;
   background: transparent;
   color: #fff;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-size: 1rem;
   width: 80%;
   outline: none;
@@ -572,6 +621,16 @@ p {
   width: 25%;
   height: 90%;
   margin: .3rem .4rem;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footer__container-insta .insta-images > img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  cursor: pointer;
 }
 
 .footer__container-follow div {

@@ -61,17 +61,24 @@ p {
   border: none;
   border-radius: 2rem;
   background: $light-color;
-  font-size: 1rem;
-  font-family: $button-font;
   cursor: pointer;
-  color: #fff;
   outline: none;
+
+  a {
+    font-family: $button-font;
+    font-size: 1rem;
+    color: #fff;
+  }
   
   &:hover {
     color: $strong-color;
     background: transparent;
     border: 1px solid #fff;
     box-shadow: 4px 3px 8px $second-color;
+  }
+
+  &:hover a, &:hover i {
+    color: $second-color;
   }
 }
 

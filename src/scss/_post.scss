@@ -49,12 +49,21 @@
         font-family: $post-titles;
         font-size: 1.5rem;
         color: $strong-color;
+
+        &:hover {
+          color: $hover-color;
+        }
       }
 
       .btn {
         @include button;
         border-radius: 0;
         padding: .7rem 1.5rem;
+
+        i {
+          color: #fff;
+        }
+
       }
     }
   }

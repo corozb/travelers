@@ -24,15 +24,8 @@
         @include button;
         margin: .5rem;
         padding: .7rem 2rem;
-
-        &:hover a {
-          color: $second-color;
-        }
       }
         
-      a {
-        color: #fff;
-      }
     }
 
     .owl-nav {
