@@ -65,6 +65,7 @@ p {
   font-family: $button-font;
   cursor: pointer;
   color: #fff;
+  outline: none;
   
   &:hover {
     color: $strong-color;

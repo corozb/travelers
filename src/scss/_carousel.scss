@@ -20,12 +20,18 @@
       margin: 3rem 2rem;
       box-shadow: 0 15px 20px rgba($second-color, 0.2);
 
-      
-
       .btn  {
+        @include button;
         margin: .5rem;
         padding: .7rem 2rem;
-        @include button;
+
+        &:hover a {
+          color: $second-color;
+        }
+      }
+        
+      a {
+        color: #fff;
       }
     }
 

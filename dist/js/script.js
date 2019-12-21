@@ -14,6 +14,19 @@ function slowScroll() {
 }
 
 
+// Scrolling Effect
+window.addEventListener('scroll', ()=> {
+  if (window.pageYOffset) {
+    $nav.classList.add('white-background')
+  }
+  else {
+    $nav.classList.remove('white-background')
+  }
+})
+
+
+
+
 // Initialize Owl Carousel
 const responsive = {
   0 : {
@@ -39,3 +52,8 @@ $(".owl-carousel").owlCarousel({
   navText: [$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next')],
   responsive: responsive
 });
+
+
+
+// AOS Instance
+AOS.init()
