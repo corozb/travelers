@@ -15,4 +15,4 @@ The content into the blog it's from two real travel bloggers:
 - [maptia](https://maptia.com/)
 - [seecolombia](https://seecolombia.travel/blog/)
 
-##[Travelers](https://corozb.github.io/travelers/)
+## [Travelers](https://corozb.github.io/travelers/)
