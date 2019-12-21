@@ -74,14 +74,6 @@ p {
   }
 }
 
-// @mixin titulos($fuente) {
-//   @if $fuente == $brand-font {
-//   } @else {
-//     font-family: $menu-font;
-//     font-size: 1.3rem;
-//   }
-// }
-
 @function calculateRem($size) {
   $remSize: $size / 16px;
   @return $remSize * 1rem;
@@ -97,30 +89,33 @@ p {
   @return rgba($color,$nivel);
 }
 
-// @each $header, $size in (h1:30px, h2: 25px, h3: 20px) {
-//   #{$header} {
-//     font-size: $size;
-//     margin: 0;
-//     @include titulos($Fuente2)
-//   }
-// }
 
+@mixin phone {
+  @media screen and (max-width: 520px) {
+    @content;
+  }
+}
 
-
-@mixin mobile {
-  @media screen and (max-width: 768px) {
+@mixin small {
+  @media screen and (max-width: 680px) {
     @content;
   }
 }
 
 @mixin tablet {
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 860px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (max-width: 1090px) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1199px) {
     @content;
   }
 }

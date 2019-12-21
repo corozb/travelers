@@ -14,10 +14,21 @@ function slowScroll() {
 }
 
 
-
-
 // Initialize Owl Carousel
-// const responsive
+const responsive = {
+  0 : {
+    items: 1
+  },
+  320 : {
+    items: 1
+  },
+  620 : {
+    items: 2
+  },
+  767 : {
+    items: 3
+  }
+}
 
 $(".owl-carousel").owlCarousel({
   loop: true,
