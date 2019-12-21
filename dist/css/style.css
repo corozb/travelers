@@ -51,6 +51,7 @@ p {
   left: 0;
   width: 100vw;
   opacity: .98;
+  z-index: 2;
   padding: 0 2rem;
   height: 0;
   min-height: 10vh;
@@ -127,7 +128,6 @@ p {
           box-shadow: 0 15px 20px rgba(57, 62, 70, 0.2);
   -webkit-transition: 1s;
   transition: 1s;
-  z-index: 2;
 }
 
 .nav__burger {
